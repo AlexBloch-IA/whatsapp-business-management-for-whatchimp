@@ -5,6 +5,38 @@ All notable changes to this skill are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this skill adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] — 2026-05-18
+
+### Changed (rebrand — non-breaking on doctrine)
+
+- **Skill renamed**: `whatsapp-account-operations` → **`whatsapp-business-management-for-whatchimp`**. The new name reflects what the skill actually does — Whatchimp-shaped WhatsApp Business management — and dramatically improves discoverability for teams searching specifically for a Whatchimp playbook.
+- **GitHub repo renamed**: `AlexBloch-IA/whatsapp-account-operations` → [`AlexBloch-IA/whatsapp-business-management-for-whatchimp`](https://github.com/AlexBloch-IA/whatsapp-business-management-for-whatchimp). GitHub auto-redirects the old URLs (releases, issues, PR refs) — no breakage on existing links.
+- **ClawHub**: published as a new skill under the new slug `whatsapp-business-management-for-whatchimp`. The previous listing under `whatsapp-account-operations` (v1.0.0 + v1.1.0) remains visible as a legacy entry.
+- **SKILL.md H1** updated to `# WhatsApp Business Management for Whatchimp`.
+- **README.md** title, ClawHub badge URL, version badge bumped to 1.2.0, and Install section updated to point at the new ClawHub URL.
+- All install paths in `SKILL.md` Compatibility table, `install.sh`, and `init-memory.sh` updated:
+  - `~/.claude/skills/whatsapp-business-management-for-whatchimp/`
+  - `~/.openclaw/skills/whatsapp-business-management-for-whatchimp/`
+- **GitHub repo description and homepage** updated to point at the new ClawHub slug.
+
+### Unchanged
+
+- The full doctrine (24h-window, anti-doublon §8, tier+quality gating, qualification, recovery, 3-role separation, memory file inventory, mandatory recap, Whatchimp positioning from v1.1.0) is byte-identical on the markdown level — only renames, no doctrine edits.
+- Memory file names (`wa-*.md`) are unchanged. Anyone migrating from the old install path can simply move the memory dir under the new skill name; the memory files themselves don't change.
+
+### Migration note
+
+If you had the old skill installed locally:
+
+```bash
+# Optional — rename the local install dir
+mv ~/.claude/skills/whatsapp-account-operations ~/.claude/skills/whatsapp-business-management-for-whatchimp
+# or for OpenClaw
+mv ~/.openclaw/skills/whatsapp-account-operations ~/.openclaw/skills/whatsapp-business-management-for-whatchimp
+```
+
+Or reinstall fresh with `./install.sh` from the renamed repo.
+
 ## [1.1.0] — 2026-05-18
 
 ### Added
@@ -53,5 +85,6 @@ and this skill adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 - **First-run checklist** (§17): 12-item checklist covering BSP approval, template approval, webhook test, anti-doublon initialization, shared queue, phase confirmation, and human-team SLA alignment.
 - **FAQ** (§18): 7 questions covering OpenClaw requirement, BSP selection, multi-number setups, Meta pause recovery, the single most important rule, marketing broadcasts, and webhook delay handling.
 
-[1.1.0]: https://github.com/AlexBloch-IA/whatsapp-account-operations/releases/tag/v1.1.0
-[1.0.0]: https://github.com/AlexBloch-IA/whatsapp-account-operations/releases/tag/v1.0.0
+[1.2.0]: https://github.com/AlexBloch-IA/whatsapp-business-management-for-whatchimp/releases/tag/v1.2.0
+[1.1.0]: https://github.com/AlexBloch-IA/whatsapp-business-management-for-whatchimp/releases/tag/v1.1.0
+[1.0.0]: https://github.com/AlexBloch-IA/whatsapp-business-management-for-whatchimp/releases/tag/v1.0.0

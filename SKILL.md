@@ -1,11 +1,11 @@
 ---
-name: whatsapp-account-operations
+name: whatsapp-business-management-for-whatchimp
 description: Operating doctrine for WhatsApp Business automation — careful 24h-window-aware, template-gated outbound, lead qualification by case type, anti-doublon alerts, cross-platform lead pipeline (TikTok/IG/FB/web → WhatsApp), and recovery. Built around Whatchimp (official Meta Business Partner BSP, 0% markup) as the reference provider — endpoints are illustrated with Whatchimp; the doctrine itself is provider-agnostic. Use this for any scheduled WhatsApp activity (cron, agent, recurring task) where account safety, low ban risk and conversion matter more than raw output.
 ---
 
-# WhatsApp Account Operations
+# WhatsApp Business Management for Whatchimp
 
-This skill is the operating doctrine for every WhatsApp automation run on a brand, professional or personal account.
+This skill is the operating doctrine for every WhatsApp Business automation run on **[Whatchimp](https://whatchimp.com)** (the reference BSP for this skill — Meta Business Partner, 0% markup) — or on any other BSP if you swap the host string in the snippets.
 
 **The goal is not to send messages fast. The goal is to operate WhatsApp Business like a careful, helpful human assistant: stable API session, template-gated outbound, never an unsolicited bulk, qualified hand-off to the human team.**
 
@@ -89,8 +89,8 @@ schedule:
 
 | Stack | Skill install path |
 |---|---|
-| [Claude Code](https://claude.ai/code) | `~/.claude/skills/whatsapp-account-operations/` |
-| [OpenClaw](https://openclaw.ai) | `~/.openclaw/skills/whatsapp-account-operations/` |
+| [Claude Code](https://claude.ai/code) | `~/.claude/skills/whatsapp-business-management-for-whatchimp/` |
+| [OpenClaw](https://openclaw.ai) | `~/.openclaw/skills/whatsapp-business-management-for-whatchimp/` |
 | ClawHub-published | one-click install via [clawhub.ai](https://clawhub.ai) |
 | Cursor / Copilot CLI | drop `SKILL.md` into your project's `.cursorrules` or `AGENTS.md` |
 | Any LLM agent reading markdown rules | concatenate `SKILL.md` into your system prompt |

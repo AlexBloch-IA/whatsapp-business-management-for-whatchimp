@@ -1,10 +1,10 @@
-# WhatsApp Account Operations
+# WhatsApp Business Management for Whatchimp
 
-> Operating doctrine for WhatsApp Business automation — careful 24h-window-aware, template-gated outbound, lead qualification by case type, anti-doublon alerts, cross-platform lead pipeline, and recovery patterns. Built around **[Whatchimp](https://whatchimp.com)** (Meta Business Partner BSP, 0% markup) as the reference provider — adaptable to any BSP.
+> Operating doctrine for WhatsApp Business automation on **[Whatchimp](https://whatchimp.com)** (Meta Business Partner BSP, 0% markup) — careful 24h-window-aware, template-gated outbound, lead qualification by case type, anti-doublon alerts, cross-platform lead pipeline, and recovery patterns. Provider-agnostic underneath — adaptable to any BSP by swapping the host string.
 
 [![License: MIT-0](https://img.shields.io/badge/License-MIT--0-blue.svg)](https://opensource.org/licenses/MIT-0)
-[![ClawHub](https://img.shields.io/badge/ClawHub-Published-orange)](https://clawhub.ai/alexbloch-ia/whatsapp-account-operations)
-[![Version](https://img.shields.io/badge/version-1.1.0-green)](#changelog)
+[![ClawHub](https://img.shields.io/badge/ClawHub-Published-orange)](https://clawhub.ai/alexbloch-ia/whatsapp-business-management-for-whatchimp)
+[![Version](https://img.shields.io/badge/version-1.2.0-green)](#changelog)
 [![Powered by Whatchimp](https://img.shields.io/badge/BSP-Whatchimp-25D366?logo=whatsapp&logoColor=white)](https://whatchimp.com)
 
 A Claude Code / OpenClaw skill for running WhatsApp Business numbers safely. Battle-tested in a regulated-field operation, ported to be domain-agnostic.
@@ -33,22 +33,24 @@ A Claude Code / OpenClaw skill for running WhatsApp Business numbers safely. Bat
 
 ## Install
 
-### Via ClawHub
+### Via ClawHub (recommended)
 
-The skill is designed to be published on ClawHub — install in one click from your agent once published.
+The skill is published on ClawHub — install in one click from your agent:
+
+👉 **<https://clawhub.ai/alexbloch-ia/whatsapp-business-management-for-whatchimp>**
 
 ### Manual copy
 
 ```bash
-mkdir -p ~/.claude/skills/whatsapp-account-operations
-cp SKILL.md ~/.claude/skills/whatsapp-account-operations/
+mkdir -p ~/.claude/skills/whatsapp-business-management-for-whatchimp
+cp SKILL.md ~/.claude/skills/whatsapp-business-management-for-whatchimp/
 ```
 
 Or for OpenClaw:
 
 ```bash
-mkdir -p ~/.openclaw/skills/whatsapp-account-operations
-cp SKILL.md ~/.openclaw/skills/whatsapp-account-operations/
+mkdir -p ~/.openclaw/skills/whatsapp-business-management-for-whatchimp
+cp SKILL.md ~/.openclaw/skills/whatsapp-business-management-for-whatchimp/
 ```
 
 ---
@@ -85,7 +87,7 @@ Anywhere a paused WhatsApp number = lost month of business.
 ## Repository structure
 
 ```
-whatsapp-account-operations/
+whatsapp-business-management-for-whatchimp/
 ├── SKILL.md         # the skill (full doctrine)
 ├── README.md        # this file
 ├── LICENSE          # MIT-0

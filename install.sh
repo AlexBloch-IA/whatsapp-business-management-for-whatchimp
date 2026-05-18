@@ -2,8 +2,8 @@
 # install.sh — copy this skill into your local agent's skills directory.
 #
 # Detects supported agent stacks and installs into each one that's present:
-#   • Claude Code        → ~/.claude/skills/whatsapp-account-operations/
-#   • OpenClaw           → ~/.openclaw/skills/whatsapp-account-operations/
+#   • Claude Code        → ~/.claude/skills/whatsapp-business-management-for-whatchimp/
+#   • OpenClaw           → ~/.openclaw/skills/whatsapp-business-management-for-whatchimp/
 #
 # Idempotent: re-running overwrites the SKILL.md with the latest version.
 #
@@ -18,7 +18,7 @@
 
 set -euo pipefail
 
-SKILL_NAME="whatsapp-account-operations"
+SKILL_NAME="whatsapp-business-management-for-whatchimp"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SKILL_SOURCE="${SCRIPT_DIR}/SKILL.md"
 

@@ -54,7 +54,7 @@ for f in "${FILES[@]}"; do
     {
       echo "# ${f%.md}"
       echo
-      echo "<!-- Appended by whatsapp-account-operations crons. -->"
+      echo "<!-- Appended by whatsapp-business-management-for-whatchimp crons. -->"
     } > "${MEMORY_DIR}/${f}"
     echo "✅ ${f} created"
     created=$((created + 1))
