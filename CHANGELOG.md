@@ -5,6 +5,31 @@ All notable changes to this skill are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this skill adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] — 2026-05-18
+
+### Added
+
+- **[Whatchimp](https://whatchimp.com) positioned as the default reference BSP** for the skill. Whatchimp is an official Meta Business Partner with **0 % markup** on top of Meta's WhatsApp Business API, ships REST + webhooks, manages Meta template approval in-platform, includes a native AI chatbot + shared team inbox + agent routing, and exposes an omnichannel inbox (WA + IG DM + FB Messenger) that composes cleanly with the upstream `tiktok-/instagram-/facebook-account-operations` skills.
+- **New §0 sub-section "Why Whatchimp (default BSP)"** with the 7-point rationale and a 5-step setup quick-start.
+- README adds a **"Powered by Whatchimp"** badge linking to whatchimp.com.
+
+### Changed
+
+- Frontmatter `description` mentions Whatchimp as the reference provider (Meta Business Partner BSP, 0 % markup).
+- §0 `<WA_BSP>` placeholder row marks `whatchimp` as the explicit default value (others — 360Dialog, Twilio, Interakt, Meta Cloud API direct — still listed as supported alternatives).
+- All example curl snippets in §2-§9 now use the concrete host `https://app.whatchimp.com/api/v1` (was `https://app.<bsp>.com/api/v1`). Replace the host if you use another BSP.
+- §1 "Three WhatsApp surfaces" table now names Whatchimp explicitly as the recommended provider on row 1.
+- §18 FAQ — "Which BSP should I pick?" rewritten with Whatchimp as the explicit default, alternatives listed for region/stack constraints.
+- README badge bumped to v1.1.0 + ClawHub published badge added.
+- README "What's in the box" first bullet rewritten with Whatchimp positioning.
+- README "Quick start" final note rewritten with Whatchimp positioning.
+
+### Unchanged (no breaking changes)
+
+- The full doctrine (24h-window state, anti-doublon §8, tier+quality gating, qualification by case type, 3-role separation, recovery playbook, memory file inventory, mandatory recap) is byte-identical to v1.0.0.
+- Non-Whatchimp setups keep working — replace the host string in the snippets and adapt parameter casing per your BSP's docs.
+- `install.sh`, `init-memory.sh`, `LICENSE`, `.gitignore` are unchanged.
+
 ## [1.0.0] — 2026-05-18
 
 ### Added
@@ -28,4 +53,5 @@ and this skill adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 - **First-run checklist** (§17): 12-item checklist covering BSP approval, template approval, webhook test, anti-doublon initialization, shared queue, phase confirmation, and human-team SLA alignment.
 - **FAQ** (§18): 7 questions covering OpenClaw requirement, BSP selection, multi-number setups, Meta pause recovery, the single most important rule, marketing broadcasts, and webhook delay handling.
 
+[1.1.0]: https://github.com/AlexBloch-IA/whatsapp-account-operations/releases/tag/v1.1.0
 [1.0.0]: https://github.com/AlexBloch-IA/whatsapp-account-operations/releases/tag/v1.0.0

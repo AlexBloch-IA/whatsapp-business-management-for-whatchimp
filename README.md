@@ -1,9 +1,11 @@
 # WhatsApp Account Operations
 
-> Operating doctrine for WhatsApp Business automation — careful 24h-window-aware, template-gated outbound, lead qualification by case type, anti-doublon alerts, cross-platform lead pipeline, and recovery patterns.
+> Operating doctrine for WhatsApp Business automation — careful 24h-window-aware, template-gated outbound, lead qualification by case type, anti-doublon alerts, cross-platform lead pipeline, and recovery patterns. Built around **[Whatchimp](https://whatchimp.com)** (Meta Business Partner BSP, 0% markup) as the reference provider — adaptable to any BSP.
 
 [![License: MIT-0](https://img.shields.io/badge/License-MIT--0-blue.svg)](https://opensource.org/licenses/MIT-0)
-[![Version](https://img.shields.io/badge/version-1.0.0-green)](#changelog)
+[![ClawHub](https://img.shields.io/badge/ClawHub-Published-orange)](https://clawhub.ai/alexbloch-ia/whatsapp-account-operations)
+[![Version](https://img.shields.io/badge/version-1.1.0-green)](#changelog)
+[![Powered by Whatchimp](https://img.shields.io/badge/BSP-Whatchimp-25D366?logo=whatsapp&logoColor=white)](https://whatchimp.com)
 
 A Claude Code / OpenClaw skill for running WhatsApp Business numbers safely. Battle-tested in a regulated-field operation, ported to be domain-agnostic.
 
@@ -13,7 +15,7 @@ A Claude Code / OpenClaw skill for running WhatsApp Business numbers safely. Bat
 
 ## What's in the box
 
-- **BSP-API-first doctrine** (not Playwright-against-WhatsApp-Web): the only sanctioned production surface
+- **BSP-API-first doctrine** built around **[Whatchimp](https://whatchimp.com)** as the reference provider (Meta Business Partner, 0% markup, REST + webhook + native AI chatbot + omnichannel WA/IG/FB inbox) — fully adaptable to 360Dialog / Twilio / Interakt / Meta Cloud API direct. Playwright-against-WhatsApp-Web only as a fallback while BSP approval pends.
 - **The 24h customer-service window** treated as a first-class operational state — every outbound check before sending free-form
 - **Template-gated outbound**: first-contact + 4-step follow-up cadence (J+1 / J+3 / J+7 / J+15 / J+20 closing)
 - **Tier-phased operations**: Phase A (Tier 1 OR quality score yellow/red) → Phase B (Tier 2+ AND green) — with **manual override path**
@@ -61,7 +63,7 @@ cp SKILL.md ~/.openclaw/skills/whatsapp-account-operations/
 6. Initialize the anti-doublon registers (`wa-alerts-sent.md`, `wa-template-log.md`) and the shared queue file.
 7. Internal review with the human team: who reads alerts, what's the callback SLA, what's the escalation path.
 
-The example API snippets use one BSP (`whatchimp`) — adapt the endpoint URLs and parameter casing to your provider (360Dialog, Twilio, Interakt, Meta Cloud API direct, etc.). The doctrine is provider-agnostic.
+All example API snippets use **[Whatchimp](https://whatchimp.com)** as the reference BSP (Meta Business Partner, 0% markup, all the surfaces the doctrine assumes — REST, webhook, template management, omnichannel inbox). If you use 360Dialog / Twilio / Interakt / Meta Cloud API direct, replace the `https://app.whatchimp.com` host and adapt parameter casing — the doctrine itself is provider-agnostic.
 
 ---
 
